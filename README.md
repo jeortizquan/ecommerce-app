@@ -9,7 +9,7 @@
 - [Usage](#usage)
     - [To run (docker ready)](#to-run-docker-ready)
 - [Development Support Commands](#development-support-commands)
-    - [To build](#to-build)
+    - [To build the app](#to-build-the-app)
     - [To run locally tests](#to-run-locally-tests)
     - [To run Test Development Mode](#to-run-test-development-mode)
     - [To run development](#to-run-development)
@@ -84,11 +84,14 @@ git clone https://github.com/jeortizquan/ecommerce-app.git
 
 # Usage
 ### To run (docker ready)
-go to the cloned folder, and this will get the service up and running
+go to the cloned folder of the app, and run the following commands to get the service up and running.
 ```
+cp .env.example .env && npm install
+npm run build
 docker-compose up
 ```
-default address and port
+
+Default address and port
 ```
 http://localhost:5000
 ```
@@ -98,14 +101,18 @@ ecommerce-app.postman_collection.json
 ```
 # Development Support Commands
 go to the cloned folder and run the command of your choice
-### To build
-
+### To build the app
 ```
 npm run build
 ```
 
 ### To run locally tests
-
+if the first time
+```
+cp .env.example .env && npm install
+npm run build
+```
+otherwise just run
 ```
 docker-compose -f docker-compose.test.yaml up -d
 npm run test
