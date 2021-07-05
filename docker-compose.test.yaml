@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  
+  ecommerce_db:
+    image: mongo:4.4.6
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: '${DB_USERNAME}'
+      MONGO_INITDB_ROOT_PASSWORD: '${DB_PASSWORD}'
+      MONGO_INITDB_DATABASE: '${DB_DATABASE}'      
+    volumes:
+      - ./src/storage/dbdatatest:/data/db
+    restart: always
+    ports:
+      - 27017:27017

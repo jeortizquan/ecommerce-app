@@ -10,7 +10,7 @@
     - [To run (docker ready)](#to-run-docker-ready)
 - [Development Support Commands](#development-support-commands)
     - [To build](#to-build)
-    - [To run tests](#to-run-tests)
+    - [To run locally tests](#to-run-locally-tests)
     - [To run Test Development Mode](#to-run-test-development-mode)
     - [To run development](#to-run-development)
     - [To run production](#to-run-production)
@@ -95,10 +95,12 @@ go to the cloned folder and run the command of your choice
 npm run build
 ```
 
-### To run tests
+### To run locally tests
 
 ```
+docker-compose -f docker-compose.test.yaml up -d
 npm run test
+docker-compose -f docker-compose.test.yaml down
 ```
 
 ### To run Test Development Mode

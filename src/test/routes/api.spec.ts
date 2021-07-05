@@ -15,15 +15,6 @@ describe('GET /health', () => {
 	});
 });
 
-describe('GET /api/products', () => {
-  it('should return an array with all the products', async () => {
-    const res = await request(app).get('/api/products');
-    expect(res.status).to.equal(200);
-    expect(res.body).not.to.be.empty;  
-    expect(res.body).to.be.an("array");
-  });
-});
-
 describe('PATCH /api/products/:id/stock', () => {
   it('should update the stock of a product and create it if doesn\'t exists', async () => {
     let productId: string = makeFakeProductId();
@@ -33,6 +24,15 @@ describe('PATCH /api/products/:id/stock', () => {
     const res = await request(app).patch('/api/products/' + productId +'/stock').send(stock);
     expect(res.status).to.equal(200);
     expect(res.body).to.be.empty;  
+  });
+});
+
+describe('GET /api/products', () => {
+  it('should return an array with all the products', async () => {
+    const res = await request(app).get('/api/products');
+    expect(res.status).to.equal(200);
+    expect(res.body).not.to.be.empty;  
+    expect(res.body).to.be.an("array");
   });
 });
 

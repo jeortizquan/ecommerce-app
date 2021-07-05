@@ -8,7 +8,8 @@
     "start:prod": "node -r ts-node/register/transpile-only -r tsconfig-paths/register ./dist/src/app.js",
     "start:test-dev": "nodemon --watch . --ext ts --exec \"mocha --check-leaks -r tsconfig-paths/register -r ts-node/register \"src/test/**/*.spec.ts\"\"",
     "build": "tsc",
-    "test": "NODE_ENV=test mocha --check-leaks -r tsconfig-paths/register -r ts-node/register \"src/test/**/*.spec.ts\""
+    "test": "NODE_ENV=test DB_HOST=localhost mocha --check-leaks --exit -r tsconfig-paths/register -r ts-node/register \"src/test/**/*.spec.ts\"",
+    "clean:install": "rm -rf node_modules && npm install"
   },
   "repository": {
     "type": "git",
