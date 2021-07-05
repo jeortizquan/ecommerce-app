@@ -7,8 +7,13 @@
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
-    - [To run](#to-run)
+    - [To run (docker ready)](#to-run-docker-ready)
+- [Development Support Commands](#development-support-commands)
+    - [To build](#to-build)
     - [To run tests](#to-run-tests)
+    - [To run Test Development Mode](#to-run-test-development-mode)
+    - [To run development](#to-run-development)
+    - [To run production](#to-run-production)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
@@ -21,7 +26,7 @@ Solution architecture has provided a rough outline on how the service is suppose
 * For each product (do not consider individual sizes, we just assume for simplicity that a product only ever has one size), there's three stock levels: IN_STOCK, RESERVED and SOLD. Stock starts being IN_STOCK, it can be reserved, and once reserved, moved to SOLD. Stock in RESERVED should at one point be automatically freed up, but that's out of scope for this PoC.
 
 # Functional Requirements
-system that consists of the following endpoints:
+This system consists of the following endpoints:
 - PATCH /product/:id/stock, with a payload consisting of a JSON Object that is formed as follows:
 ```
 {"stock": 123}
@@ -56,32 +61,61 @@ A special focus in the implementation of the proof of concept should be put on t
 * [Node.js](https://nodejs.org/en/about/)
 * [MongoDB](https://www.mongodb.com)
 * [Mocha](https://mochajs.org)
+* [Chai](https://chaijs.com)
 * [Express](https://expressjs.com)
 
 # Getting Started
 # Prerequisites
-* [Docker](https://www.docker.com/products/docker-desktop)
+* [Docker Desktop](https://www.docker.com/products/docker-desktop)
 
 # Installation
-```bash
+```
 git clone https://github.com/jeortizquan/ecommerce-app.git
 ```
 
 # Usage
-### To run
-go to the cloned folder
+### To run (docker ready)
+go to the cloned folder, and this will get the service up and running
 ```
 docker-compose up
 ```
+default address and port
+```
+http://localhost:5000
+```
+a postman collection is included to test the endpoints
+```
+ecommerce-app.postman_collection.json
+```
+# Development Support Commands
+go to the cloned folder and run the command of your choice
+### To build
 
+```
+npm run build
+```
 
 ### To run tests
 
 ```
-docker-compose exec workout-app bash
+npm run test
 ```
+
+### To run Test Development Mode
+
 ```
-./vendor/bin/phpunit
+npm run start:test-dev
+```
+
+### To run development
+
+```
+npm run start:dev
+```
+### To run production
+
+```
+npm run start:prod
 ```
 
 # Roadmap
