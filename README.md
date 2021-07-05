@@ -88,7 +88,7 @@ go to the cloned folder of the app, and run the following commands to get the se
 ```
 cp .env.example .env && npm install
 npm run build
-docker-compose up
+docker-compose up -d
 ```
 
 Default address and port
