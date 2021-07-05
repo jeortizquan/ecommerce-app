@@ -1,0 +1,25 @@
+version: '3.9'
+services:
+  ecommerce-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: 'npm run start:prod'
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - 5000:5000
+    depends_on:
+      - ecommerce_db
+
+  ecommerce_db:
+    image: mongo:4.4.6
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: '${DB_USERNAME}'
+      MONGO_INITDB_ROOT_PASSWORD: '${DB_PASSWORD}'
+      MONGO_INITDB_DATABASE: '${DB_DATABASE}'      
+    volumes:
+      - ./src/storage/dbdata:/data/db
+    restart: always
+    ports:
+      - 27017:27017

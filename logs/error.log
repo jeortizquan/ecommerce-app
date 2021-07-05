@@ -1,0 +1,87 @@
+2021-07-02 20:26:43:2643 [31merror[39m: [31mBody is required[39m
+2021-07-02 20:29:42:2942 [31merror[39m: [31mBody is required[39m
+2021-07-02 20:31:01:311 [31merror[39m: [31mBody is required[39m
+2021-07-02 20:31:39:3139 [31merror[39m: [31mBody is required[39m
+2021-07-02 20:33:42:3342 [31merror[39m: [31mBody is required[39m
+2021-07-02 20:34:13:3413 [31merror[39m: [31mBody is required[39m
+2021-07-02 20:34:17:3417 [31merror[39m: [31mBody is required[39m
+2021-07-02 20:34:31:3431 [31merror[39m: [31mBody is required[39m
+2021-07-02 20:34:39:3439 [31merror[39m: [31mBody is required[39m
+2021-07-02 20:34:47:3447 [31merror[39m: [31mBody is required[39m
+2021-07-02 20:36:37:3637 [31merror[39m: [31mBody is required[39m
+2021-07-02 20:39:40:3940 [31merror[39m: [31mBody is too short - should be 120 chars minimum.[39m
+2021-07-02 20:39:52:3952 [31merror[39m: [31mBody is too short - should be 120 chars minimum.[39m
+2021-07-02 20:41:55:4155 [31merror[39m: [31mDescription is too short - should be 80 chars minimum.[39m
+2021-07-02 20:49:03:493 [31merror[39m: [31mdb error getaddrinfo ENOTFOUND ecommerce_db[39m
+2021-07-02 21:41:54:4154 [31merror[39m: [31mdb error Authentication failed.[39m
+2021-07-02 21:44:01:441 [31merror[39m: [31mdb error Authentication failed.[39m
+2021-07-02 21:44:51:4451 [31merror[39m: [31mdb error Authentication failed.[39m
+2021-07-02 21:47:10:4710 [31merror[39m: [31mdb error Authentication failed.[39m
+2021-07-02 21:53:39:5339 [31merror[39m: [31mdb error Authentication failed.[39m
+2021-07-02 21:55:28:5528 [31merror[39m: [31mdb error Authentication failed.[39m
+2021-07-02 22:03:14:314 [31merror[39m: [31mdb error Authentication failed.[39m
+2021-07-02 22:11:19:1119 [31merror[39m: [31mdb error Authentication failed.[39m
+2021-07-02 22:27:22:2722 [31merror[39m: [31mdb error Authentication failed.[39m
+2021-07-02 22:30:27:3027 [31merror[39m: [31mdb error Authentication failed.[39m
+2021-07-02 23:01:56:156 [31merror[39m: [31mdb error connection <monitor> to 127.0.0.1:27017 closed[39m
+2021-07-03 14:42:43:4243 [31merror[39m: [31mproductId is required[39m
+2021-07-03 14:46:13:4613 [31merror[39m: [31mproductId is required[39m
+2021-07-03 14:46:17:4617 [31merror[39m: [31mproductId is required[39m
+2021-07-03 14:46:45:4645 [31merror[39m: [31mproductId is required[39m
+2021-07-03 14:48:32:4832 [31merror[39m: [31mproductId is required[39m
+2021-07-03 14:49:44:4944 [31merror[39m: [31mproductId is required[39m
+2021-07-03 14:51:19:5119 [31merror[39m: [31mproductId is required[39m
+2021-07-03 14:51:23:5123 [31merror[39m: [31mproductId is required[39m
+2021-07-03 15:17:47:1747 [31merror[39m: [31mbody.stock must be a positive number[39m
+2021-07-03 15:17:56:1756 [31merror[39m: [31mbody.stock must be a positive number[39m
+2021-07-03 15:19:20:1920 [31merror[39m: [31mbody.stock must be a positive number[39m
+2021-07-03 15:23:19:2319 [31merror[39m: [31mbody.stock must be greater than 0[39m
+2021-07-03 15:23:55:2355 [31merror[39m: [31mbody.stock must be greater than -1[39m
+2021-07-03 15:24:01:241 [31merror[39m: [31mbody.stock must be greater than -1[39m
+2021-07-03 19:28:36:2836 [31merror[39m: [31mreservation token is required[39m
+2021-07-03 19:39:12:3912 [31merror[39m: [31mreservation token is required[39m
+2021-07-03 19:39:53:3953 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 21:05:36:536 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 21:06:47:647 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 21:13:56:1356 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 21:14:44:1444 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 22:38:35:3835 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 22:40:40:4040 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 22:41:20:4120 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 22:42:03:423 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 22:47:14:4714 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 22:50:55:5055 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 22:53:37:5337 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 23:03:42:342 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 23:04:23:423 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 23:04:53:453 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 23:05:50:550 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 23:06:22:622 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 23:06:43:643 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 23:08:21:821 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 23:18:06:186 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 23:20:25:2025 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 23:21:26:2126 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 23:22:08:228 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 23:23:23:2323 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 23:26:57:2657 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 23:27:58:2758 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 23:28:43:2843 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 23:31:55:3155 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 23:34:45:3445 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 23:35:23:3523 [31merror[39m: [31mreservation token is required[39m
+2021-07-04 23:41:14:4114 [31merror[39m: [31mreservation token is required[39m
+2021-07-05 00:23:19:2319 [31merror[39m: [31mbody.reservationToken must be a `string` type, but the final value was: `{}`.[39m
+2021-07-05 00:24:53:2453 [31merror[39m: [31mbody.reservationToken must be a `string` type, but the final value was: `{}`.[39m
+2021-07-05 00:25:10:2510 [31merror[39m: [31mbody.reservationToken must be a `string` type, but the final value was: `{}`.[39m
+2021-07-05 00:33:58:3358 [31merror[39m: [31mbody.reservationToken must be a `string` type, but the final value was: `{}`.[39m
+2021-07-05 00:36:34:3634 [31merror[39m: [31mbody.reservationToken must be a `string` type, but the final value was: `{}`.[39m
+2021-07-05 00:38:07:387 [31merror[39m: [31mbody.reservationToken must be a `string` type, but the final value was: `{}`.[39m
+2021-07-05 00:38:25:3825 [31merror[39m: [31mbody.reservationToken must be a `string` type, but the final value was: `{}`.[39m
+2021-07-05 00:39:44:3944 [31merror[39m: [31mbody.reservationToken must be a `string` type, but the final value was: `{}`.[39m
+2021-07-05 00:45:01:451 [31merror[39m: [31mbody.reservationToken must be a `string` type, but the final value was: `{}`.[39m
+2021-07-05 02:16:51:1651 [31merror[39m: [31mreservation token is required[39m
+2021-07-05 02:18:48:1848 [31merror[39m: [31mreservation token is required[39m
+2021-07-05 02:19:35:1935 [31merror[39m: [31mreservation token is required[39m
+2021-07-05 05:22:10:2210 [31merror[39m: [31mreservation token is required[39m
+2021-07-05 03:31:48:3148 [31merror[39m: [31mdb error connect ECONNREFUSED 127.0.0.1:27017[39m
