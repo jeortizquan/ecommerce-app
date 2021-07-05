@@ -27,29 +27,38 @@ Solution architecture has provided a rough outline on how the service is suppose
 
 # Functional Requirements
 This system consists of the following endpoints:
+```
 - PATCH /product/:id/stock, with a payload consisting of a JSON Object that is formed as follows:
+```
 ```
 {"stock": 123}
 ```
 This endpoint sets the stock that is available to be sold (i.e. IN_STOCK), overwriting any existing values for IN_STOCK. If a record for the product does not exist, a new one is created.
-- GET /product/:id
-This endpoint returns a JSON Object returning the stock level for the product given in the following form:
+```
+- GET /product/:id This endpoint returns a JSON Object returning the stock level for the product given in the following form:
+```
 ```
 {"IN_STOCK": 123, "RESERVED": 4, "SOLD": 12}
 ```
 If there is no record for the given Product ID, the request returns a status code of 404 with an arbitrary response body that must be ignored, otherwise the status code is a 200.
+```
 - POST /product/:id/reserve, without any payload. This call reserves one item of stock. On success, a 200 status code is returned, with a response JSON that is having the following form
+```
 ```
 {"reservationToken": "22489339-5462-458b-b184-fc1f55eedab5"}
 ```
 This call moves stock from IN_STOCK to reserved. Should the IN_STOCK column have a value lower than 1, this call returns a status code of 400 (feel free to suggest a semantically more fitting one) with an arbitrary response body that must be ignored.
 The Reservation Token is unique for one item of stock and is required to later mark an item of stock as sold – without this token, both the unreserve (i.e. the inverse operation) and the final sold move cannot be performed. It is the callers responsibility to keep track of this reservationToken.
+```
 - POST /product/:id/unreserve, with a JSON payload like this:
+```
 ```
 {"reservationToken": "22489339-5462-458b-b184-fc1f55eedab5"}
 ```
 This endpoint returns a 200 status code and moves one item of stock from RESERVED to IN_STOCK if, and only if, the reservation token is recognised and belonging to the product ID indicated. After the stock item has been moved to IN_STOCK again, it is not possible to use the reservation token again, it can be destroyed by the caller.
-- POST /product/:id/sold, with a JSON payload of
+```
+- POST /product/:id/sold, with a JSON payload of:
+```
 ```
 {"reservationToken": "22489339-5462-458b-b184-fc1f55eedab5"}
 ```
