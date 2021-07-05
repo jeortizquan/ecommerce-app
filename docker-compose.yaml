@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: 'cp .env.example .env && npm install && npm run start:prod'
+    command: 'npm run start:prod'
     volumes:
       - .:/usr/src/app
     ports:
